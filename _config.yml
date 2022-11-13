@@ -1,0 +1,13 @@
+title: "Pod 22.PX.X"
+email: sa.brgmane@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  This is my portfolio website!
+baseurl: "/" 
+url: "https://sabrgmane.github.io/" 
+twitter_username: ""
+github_username:  sabrgmane
+
+sass:
+  sass_dir: _sass
+
+icon: /assets/img/photo.jpg
