@@ -7,10 +7,15 @@
     <a>
     {% endif %}
       <div class="card">
-        <div class="info">
-            <p class="title">{{ item.title }} <span class="badge badge-secondary">private</i></span>
-          <p class="location">{{ item.event }}</p>
-          <p class="dates">{{ item.date }}</p>
+        <div class="info row">
+          <div class="col-10">
+            <p class="title">{{ item.title }} </p>
+            <p class="location">{{ item.event }}</p>
+            <p class="dates">{{ item.date }}</p>
+          </div>
+          <div class="col-2">
+              <span class="badge badge-secondary">private</span>
+          </div>
         </div>
       </div>
     </a>
