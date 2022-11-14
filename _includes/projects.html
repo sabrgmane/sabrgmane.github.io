@@ -2,7 +2,7 @@
 <div class="row m-5">
     {% for item in site.data.projects %}
     {% if item.page-name %}
-        <div class="col-4 row card" onclick="/projects/{{ item.page-name }}">
+        <div class="col-4 row card">
         {% else %}
         <div class="row card">
         {% endif %}
@@ -11,8 +11,8 @@
 
 
                 <div class="col-10">
-                    <p class="h5"><strong>{{ item.title }} </strong></p>
-                            <p class="h6">{{ item.event }}</p>
+                    <a class="h5" href="/projects/{{ item.page-name }}"><strong>{{ item.title }} </strong></p>
+                            <p class="h6">{{ item.event }}</a>
                     <p class="h6 text-muted"><small>{{ item.date }}</small></p>
                 </div>
                 <div class="col-2">
