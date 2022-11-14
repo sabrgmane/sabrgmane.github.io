@@ -2,13 +2,13 @@
 <div class="row">
     {% for item in site.data.projects %}
     {% if item.page-name %}
-    <a href="/projects/{{ item.page-name }}">
+    <div class="col-md-6 col-xl-4" onclick="/projects/{{ item.page-name }}">
     {% else %}
-    <a>
+    <div class="col-md-6 col-xl-4">
     {% endif %}
 
         
-<div class="col-md-6 col-xl-4">
+
 <div class="card mb-3 widget-content bg-arielle-smile">
 <div class="widget-content-wrapper text-white">
 <div class="widget-content-left info">
@@ -23,7 +23,7 @@
 </div>
 </div>
 
-    </a>
+
     {% endfor %}
   </div>
   
