@@ -1,25 +1,25 @@
 <h2>Projects</h2>
-<div>
+<div class="row">
     {% for item in site.data.projects %}
     {% if item.page-name %}
-    <div class="row card" onclick="/projects/{{ item.page-name }}">
-    {% else %}
-    <div class="row card">
-    {% endif %}
+        <div class="col-4 row card" onclick="/projects/{{ item.page-name }}">
+        {% else %}
+        <div class="row card">
+        {% endif %}
 
-        
 
-    
-        <div class="col-10">
-                    <p class="title">{{ item.title }} </p>
-                    <p class="location">{{ item.event }}</p>
-                    <p class="dates">{{ item.date }}</p>
+
+
+                <div class="col-10">
+                            <p class="title">{{ item.title }} </p>
+                            <p class="location">{{ item.event }}</p>
+                            <p class="dates">{{ item.date }}</p>
+                </div>
+                <div class="col-2">
+                    <div class="widget-numbers text-white float-right"><span class="badge badge-secondary">private</span></div>
+                </div>
         </div>
-        <div class="col-2">
-            <div class="widget-numbers text-white float-right"><span class="badge badge-secondary">private</span></div>
-        </div>
-    </div>
-</div>
+
 
 
 
