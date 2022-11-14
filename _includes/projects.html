@@ -6,16 +6,23 @@
     {% else %}
     <a>
     {% endif %}
-      <div class="card row">
-        <div class="info col-10">
+
+        
+<div class="col-md-6 col-xl-4">
+<div class="card mb-3 widget-content bg-arielle-smile">
+<div class="widget-content-wrapper text-white">
+<div class="widget-content-left info">
             <p class="title">{{ item.title }} </p>
             <p class="location">{{ item.event }}</p>
             <p class="dates">{{ item.date }}</p>
-         </div>
-         <div class="col-2">
-              <span class="badge badge-secondary">private</span>
-         </div>
-      </div>
+</div>
+<div class="widget-content-right">
+<div class="widget-numbers text-white"><span class="badge badge-secondary">private</span></div>
+</div>
+</div>
+</div>
+</div>
+        
     </a>
     {% endfor %}
   </div>
